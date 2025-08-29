@@ -605,14 +605,15 @@ export default function App() {
 									+91- 7252992003, +91- 7017320729
 								</a>
 							</div>
-							<form className="relative md:col-span-2 overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-xl">
+							<form action="https://formspree.io/f/xyzdzqkr" method="POST" className="relative md:col-span-2 overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-xl">
 								<div className="pointer-events-none absolute -top-20 -right-20 h-56 w-56 rounded-full bg-indigo-500/10 blur-3xl" />
 								<div className="grid gap-4 sm:grid-cols-2">
 									<div className="flex flex-col gap-2">
 										<label className="text-sm">Name</label>
 										<input
 											placeholder="Your full name"
-											name="WORXELITE"
+											name="name"
+											type="text"
 											required
 											className="rounded-2xl border border-slate-800 bg-slate-950 px-4 py-3 outline-none ring-indigo-500 focus:ring-2"
 										/>
@@ -646,6 +647,7 @@ export default function App() {
 										required
 										className="rounded-2xl border border-slate-800 bg-slate-950 px-4 py-3 outline-none ring-indigo-500 focus:ring-2"
 									/>
+									<input type="hidden" name="_subject" value="New inquiry from WORXELITE" />
 								</div>
 								<div className="mt-6 flex items-center justify-between">
 									<p className="text-xs text-slate-400">
